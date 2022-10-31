@@ -35,6 +35,7 @@ let strategy = new JWTStrategy(jwtOptions, (jwt_payload, done) => {
 
 //Import API Routes
 import authApiRouter from './routes/api/auth-api.router.server.js';
+import moviesApiRouter from './routes/api/movies-api.router.server.js';
 
 // Auth Step 1 - import modules
 import passport from 'passport';
@@ -111,7 +112,7 @@ app.use('/', indexRouter);
 app.use('/', movieRouter);
 app.use('/', authRouter);
 app.use('/api/auth', authApiRouter);
-
+app.use('/api/movies', moviesApiRouter);
 
 export default app;
 
