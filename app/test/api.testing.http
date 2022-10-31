@@ -22,11 +22,38 @@ content-type: application/json
 GET http://localhost:3000/api/auth/logout HTTP/1.1
 content-type: application/json
 
-
 ###
 GET http://localhost:3000/api/movies/list HTTP/1.1
 content-type: application/json
 
 ###
 GET http://localhost:3000/api/movies/6352e1ddfd29d65db98a6e93 HTTP/1.1
+content-type: application/json
+
+###
+POST http://localhost:3000/api/movies/add HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Holloween",
+    "year": "2018",
+    "director": "IDW",
+    "genre": "Slasher",
+    "runtime": 91
+}
+
+###
+PUT http://localhost:3000/api/movies/edit/63605b06d69d90c77e68cccd HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Holloween2",
+    "year": "1978",
+    "director": "IDW",
+    "genre": "Slasher",
+    "runtime": 108
+}
+
+###
+DELETE http://localhost:3000/api/movies/delete/6352e2edfd29d65db98a6eab HTTP/1.1
 content-type: application/json
