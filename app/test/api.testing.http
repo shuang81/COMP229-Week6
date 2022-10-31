@@ -1,0 +1,27 @@
+###
+POST http://localhost:3000/api/auth/register HTTP/1.1
+content-type: application/json
+
+{
+    "displayName": "Alan Huang",
+    "username": "wtf215031",
+    "password": "test123",
+    "emailAddress": "wtf215031@gmail.com"
+}
+
+###
+POST http://localhost:3000/api/auth/login HTTP/1.1
+content-type: application/json
+
+{
+    "username": "wtf215031",
+    "password": "test123"
+}
+
+###
+GET http://localhost:3000/api/auth/logout HTTP/1.1
+content-type: application/json
+
+{
+
+}
