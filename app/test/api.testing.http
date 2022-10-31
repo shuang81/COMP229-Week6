@@ -25,17 +25,20 @@ content-type: application/json
 ###
 GET http://localhost:3000/api/movies/list HTTP/1.1
 content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNjAzNjU2OGYxYmJlZTg3NjZlNGU0MSIsImRpc3BsYXlOYW1lIjoiQWxhbiBIdWFuZyIsImVtYWlsQWRkcmVzcyI6Ind0ZjIxNTAzMUBnbWFpbC5jb20iLCJpYXQiOjE2NjcyNTk2MDUsImV4cCI6MTY2Nzg2NDQwNX0.oVvnYHOdJ31loidBKw5df_b2Ok-Fizemjh5yKRA7S0c
 
 ###
 GET http://localhost:3000/api/movies/6352e1ddfd29d65db98a6e93 HTTP/1.1
 content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNjAzNjU2OGYxYmJlZTg3NjZlNGU0MSIsImRpc3BsYXlOYW1lIjoiQWxhbiBIdWFuZyIsImVtYWlsQWRkcmVzcyI6Ind0ZjIxNTAzMUBnbWFpbC5jb20iLCJpYXQiOjE2NjcyNTk2MDUsImV4cCI6MTY2Nzg2NDQwNX0.oVvnYHOdJ31loidBKw5df_b2Ok-Fizemjh5yKRA7S0c
 
 ###
 POST http://localhost:3000/api/movies/add HTTP/1.1
 content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNjAzNjU2OGYxYmJlZTg3NjZlNGU0MSIsImRpc3BsYXlOYW1lIjoiQWxhbiBIdWFuZyIsImVtYWlsQWRkcmVzcyI6Ind0ZjIxNTAzMUBnbWFpbC5jb20iLCJpYXQiOjE2NjcyNTk2MDUsImV4cCI6MTY2Nzg2NDQwNX0.oVvnYHOdJ31loidBKw5df_b2Ok-Fizemjh5yKRA7S0c
 
 {
-    "name": "Holloween",
+    "name": "Holloween 3",
     "year": "2018",
     "director": "IDW",
     "genre": "Slasher",
@@ -43,11 +46,12 @@ content-type: application/json
 }
 
 ###
-PUT http://localhost:3000/api/movies/edit/63605b06d69d90c77e68cccd HTTP/1.1
+PUT http://localhost:3000/api/movies/edit/63605d4267585ce1749eebfc HTTP/1.1
 content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNjAzNjU2OGYxYmJlZTg3NjZlNGU0MSIsImRpc3BsYXlOYW1lIjoiQWxhbiBIdWFuZyIsImVtYWlsQWRkcmVzcyI6Ind0ZjIxNTAzMUBnbWFpbC5jb20iLCJpYXQiOjE2NjcyNTk2MDUsImV4cCI6MTY2Nzg2NDQwNX0.oVvnYHOdJ31loidBKw5df_b2Ok-Fizemjh5yKRA7S0c
 
 {
-    "name": "Holloween2",
+    "name": "Holloween4",
     "year": "1978",
     "director": "IDW",
     "genre": "Slasher",
@@ -55,5 +59,6 @@ content-type: application/json
 }
 
 ###
-DELETE http://localhost:3000/api/movies/delete/6352e2edfd29d65db98a6eab HTTP/1.1
+DELETE http://localhost:3000/api/movies/delete/63605d4267585ce1749eebfc HTTP/1.1
 content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNjAzNjU2OGYxYmJlZTg3NjZlNGU0MSIsImRpc3BsYXlOYW1lIjoiQWxhbiBIdWFuZyIsImVtYWlsQWRkcmVzcyI6Ind0ZjIxNTAzMUBnbWFpbC5jb20iLCJpYXQiOjE2NjcyNTk2MDUsImV4cCI6MTY2Nzg2NDQwNX0.oVvnYHOdJ31loidBKw5df_b2Ok-Fizemjh5yKRA7S0c

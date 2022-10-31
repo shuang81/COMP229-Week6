@@ -35,7 +35,7 @@ export function Add(req, res, next){
             res.end(err);
         }
 
-        res.json({success: true, msg: 'Success', newMovie });
+        res.json({success: true, msg: 'Add Successfully', newMovie });
     })
 }
 export function Edit(req, res, next){
@@ -52,7 +52,7 @@ export function Edit(req, res, next){
             res.end(err);
         }
 
-        res.json({success: true, msg: 'Success', updatedMovie });
+        res.json({success: true, msg: 'Edit Successfully', updatedMovie });
     })
 }
 
@@ -65,6 +65,6 @@ export function Delete(req, res, next){
             res.end(err);
         }
 
-        res.json({success: true, msg: 'Success'})
+        res.json({success: true, msg: 'Delete Successfully'})
     })
 }
